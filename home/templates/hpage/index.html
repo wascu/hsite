@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static from staticfiles %}
+  <title>HomeCCC</title>
+
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,600,800,400,300%7CRoboto:700,400,300%7CMerriweather:400,400italic' rel='stylesheet'>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="{%static 'hpage/css/bootstrap.min.css'%}" />
+  <link rel="stylesheet" href="{%static 'hpage/css/magnific-popup.css'%}" />
+  <link rel="stylesheet" href="{%static 'hpage/revolution/css/settings.css'%}" />
+  <link rel="stylesheet" href="{%static 'hpage/css/font-icons.css'%}" />
+  <link rel="stylesheet" href="{%static 'hpage/css/rev-slider.css'%}" />
+  <link rel="stylesheet" href="{%static 'hpage/css/sliders.css'%}" />
+  <link rel="stylesheet" href="{%static 'hpage/css/style.css'%}" />
+  <link rel="stylesheet" href="{%static 'hpage/css/responsive.css'%}" />
+  <link rel="stylesheet" href="{%static 'hpage/css/spacings.css'%}" />
+  <link rel="stylesheet" href="{%static 'hpage/css/animate.min.css'%}" />
+
+</head>
+
+<body class="relative">
+
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <section class="sidenav">
+    <h6>About Us</h6>
+    <address class="info-address">Philippines, Afela inc.<br> Talay st. 65, PO Box 6200 </address>
+    <p>Phone: + 1 888 1554 456 123</p>
+    <p>Email: <a href="mailto:themesupport@gmail.com">themesupport@gmail.com</a></p>
+    <p>Fax: +63 918 4084 694</p>
+    <h6 class="mt-40">Useful Links</h6>
+    <ul class="links-list nopadding">
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+
+    <div class="social-icons dark rounded mt-40">
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>                  
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-vimeo"></i></a>
+    </div>
+
+    <a href="#" id="sidenav-close">
+      <i class="ti-close"></i>
+    </a>
+  </section>
+
+  <div class="main-wrapper">
+
+    <header class="nav-type-1 transparent">
+
+      <div class="search-wrap">
+        <div class="search-inner">
+          <div class="search-cell">
+            <form method="get">
+              <div class="search-field-holder">
+                <input type="search" class="form-control main-search-input" placeholder="Search for">
+                <input type="submit" class="search-submit" value="">
+              </div>            
+            </form>
+          </div>
+        </div>
+        <i class="icon-close search-close" id="search-close"></i>
+      </div>
+    
+      <nav class="navbar navbar-static-top">
+        <div class="navigation">
+          <div class="container-fluid semi-fluid relative">
+
+            <div class="row">
+
+              <div class="navbar-header">
+                <!-- Logo -->
+                <div class="logo-container">
+                  <div class="logo-wrap">
+                    <a href="index.html">
+                      <img class="logo" src="{%static 'hpage/img/85.png'%}" alt="logo">
+                      <img class="logo-dark" src="{%static 'hpage/img/85.png'%}" alt="logo">
+                    </a>
+                  </div>
+                </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <!-- Mobile Cart -->
+                <div class="nav-cart-wrap style-1 mobile-cart hidden-lg hidden-md">
+                  <div class="nav-cart">
+                    <div class="cart-outer">
+                      <div class="cart-inner">
+                        <a class="shopping-cart relative" href="#">
+                          <i class="icon-bag"></i>
+                          <span>2</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end navbar-header -->
+
+              <div class="col-md-12 nav-wrap">
+                <div class="collapse navbar-collapse text-center" id="navbar-collapse">
+                  
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">主页</a></li>
+					<li><a href="services.html">服务</a></li>
+					<li><a href="about-us.html">关于我们</a></li>
+					<li><a href="contact.html">联系我们</a></li>
+                    <li id="mobile-search" class="hidden-lg hidden-md">
+                      <form method="get" class="mobile-search">
+                        <input type="search" class="form-control" placeholder="Search...">
+                        <button type="submit" class="search-button">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </form>
+                    </li>
+        
+                  </ul> <!-- end menu -->
+                </div> <!-- end collapse -->
+              </div> <!-- end col -->
+
+              <ul class="nav-right hidden-sm hidden-xs">
+
+                <!-- Cart -->
+                <li class="nav-cart-wrap style-1">
+                  <div class="nav-cart">
+                    <div class="cart-outer">
+                      <div class="cart-inner">
+                        <a class="shopping-cart relative" href="#">
+                          <i class="icon-bag"></i>
+                          <span>2</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="nav-cart-container">
+                      <div class="nav-cart-items">
+
+                        <div class="nav-cart-item clearfix">
+                          <div class="nav-cart-img">
+                            <a href="#">
+                              <img src="{%static 'hpage/img/shop/cart_small_1.jpg'%}" alt="">
+                            </a>
+                          </div>
+                          <div class="nav-cart-title">
+                            <a href="#">
+                              Ladies Bag
+                            </a>
+                            <div class="nav-cart-price">
+                              <span>1 x</span>
+                              <span>1250.00</span>
+                            </div>
+                          </div>
+                          <div class="nav-cart-remove">
+                            <a href="#"></a>
+                          </div>
+                        </div>
+
+                        <div class="nav-cart-item clearfix">
+                          <div class="nav-cart-img">
+                            <a href="#">
+                              <img src="{%static 'hpage/img/shop/cart_small_2.jpg'%}" alt="">
+                            </a>
+                          </div>
+                          <div class="nav-cart-title">
+                            <a href="#">
+                              Sequin Suit longer title
+                            </a>
+                            <div class="nav-cart-price">
+                              <span>1 x</span>
+                              <span>1250.00</span>
+                            </div>
+                          </div>
+                          <div class="nav-cart-remove">
+                            <a href="#"></a>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="nav-cart-summary">
+                        <span>Cart Subtotal</span>
+                        <span class="total-price">$1799.00</span>
+                      </div>
+
+                      <div class="nav-cart-actions mt-20">
+                        <a href="shop-#" class="btn btn-md btn-dark">View Cart</a>
+                        <a href="#" class="btn btn-md btn-color mt-10">Proceed to Checkout</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </li> <!-- end cart --> 
+
+                <li class="nav-search-wrap">
+                  <a href="#" class="nav-search">
+                    <i class="icon-magnifier search-trigger"></i>
+                  </a>
+                </li>
+
+                <li class="nav-icon-trigger">
+                  <a href="#" id="nav-icon">
+                    <div class="nav-icon-inner">
+                      <div class="nav-icon-wrap">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </a>
+                </li>                       
+              </ul>           
+          
+            </div> <!-- end row -->
+          </div> <!-- end container -->
+        </div> <!-- end navigation -->
+      </nav> <!-- end navbar -->
+    </header>
+
+    <div class="content-wrapper oh">
+      
+      <!-- Revolution Slider -->
+      <section>
+        <div class="rev_slider_wrapper">
+          <div class="rev_slider" id="slider1" data-version="5.0">
+            <ul>
+              <!-- SLIDE 1 -->
+              <li data-fstransition="fade"
+                data-transition="zoomout"
+                data-slotamount="1"
+                data-masterspeed="1000"
+                data-delay="8000"
+                data-title="Creative Minimalism">
+
+                <!-- MAIN IMAGE -->
+                <img src="{%static 'hpage/img/revolution/slide_1.jpg'%}"
+                  alt=""
+                  data-bgrepeat="no-repeat"
+                  data-bgfit="cover"
+                  data-bgparallax="7"
+                  class="rev-slidebg"
+                  >
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption hero-text"
+                  data-x="center"
+                  data-y="center"
+                  data-voffset="['-100', '-90', '-80', '-100']"
+                  data-fontsize="['100', '90', '80', '40']"
+                  data-lineheight="['70', '65', '50', '40']"
+                  data-fontweight="700"
+                  data-whitespace="[nowrap, nowrap, nowrap, nowrap]"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                  data-start="1000"
+                  data-elementdelay="0.01"
+                  style="text-align: center;">Welcome to 欢迎
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption hero-text"
+                  data-x="center"
+                  data-y="center"
+                  data-voffset="['10','10','10','-45']"
+                  data-fontsize="['100', '90', '80', '40']"
+                  data-lineheight="['70', '65', '50', '40']"
+                  data-fontweight="700"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                  data-start="1200"
+                  data-elementdelay="0.01"
+                  style="text-align: center;">Agency With a Passion
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption medium-text"
+                  data-x="center"
+                  data-y="center"
+                  data-voffset="[110,116,100,20]"
+                  data-fontsize="['22', '22', '22', '20']"
+                  data-whitespace="[nowrap,nowrap,nowrap,normal]"
+                  data-width="[auto,auto,auto,300]"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                  data-start="1300"
+                  data-elementdelay="0.01"
+                  style="text-align: center;">Make incredible website with a Syros theme in no time
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption tp-resizeme"
+                  data-x="center"
+                  data-y="center"
+                  data-voffset="[200, 200, 170, 100]"
+                  data-hoffset="0"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                  data-start="1400"
+                  data-elementdelay="0.01"
+                  data-linktoslide="next"
+                  style="z-index: 4; letter-spacing: 2px;"><a href='#' class='btn btn-lg btn-transparent'>了解更多...</a>
+                </div>    
+          
+              </li>
+
+              <!-- SLIDE 2 -->
+              <li data-transition="zoomout"
+                data-slotamount="1"
+                data-masterspeed="1000"
+                data-delay="8000"
+                data-title="钻石想法 Ideas">
+
+                <!-- MAIN IMAGE -->
+                <img src="{%static 'hpage/img/revolution/slide_2.jpg'%}"
+                  alt=""
+                  data-bgrepeat="no-repeat"
+                  data-bgfit="cover"
+                  data-bgparallax="7"
+                  class="rev-slidebg"
+                  >
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption hero-text"
+                  data-x="center"
+                  data-y="center"
+                  data-voffset="['-100', '-90', '-80', '-100']"
+                  data-fontsize="['100', '90', '80', '40']"
+                  data-lineheight="['70', '65', '50', '40']"
+                  data-fontweight="700"
+                  data-whitespace="[nowrap, nowrap, nowrap, nowrap]"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                  data-start="1000"
+                  data-elementdelay="0.01"
+                  style="text-align: center;">Super Flexible
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption hero-text"
+                  data-x="center"
+                  data-y="center"
+                  data-voffset="['10','10','10','-45']"
+                  data-fontsize="['100', '90', '80', '40']"
+                  data-lineheight="['70', '65', '50', '40']"
+                  data-fontweight="700"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                  data-start="1200"
+                  data-elementdelay="0.01"
+                  style="text-align: center;">钻石版设计 
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption medium-text"
+                  data-x="center"
+                  data-y="center"
+                  data-voffset="[110,116,100,20]"
+                  data-fontsize="['22', '22', '22', '20']"
+                  data-whitespace="[nowrap,nowrap,nowrap,normal]"
+                  data-width="[auto,auto,auto,300]"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                  data-start="1300"
+                  data-elementdelay="0.01"
+                  style="text-align: center;">Based on a popular Bootstrap framework 
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption tp-resizeme"
+                  data-x="center"
+                  data-y="center"
+                  data-voffset="[200, 200, 170, 100]"
+                  data-hoffset="0"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                  data-start="1400"
+                  data-elementdelay="0.01"
+                  data-linktoslide="next"
+                  style="z-index: 4; letter-spacing: 2px;"><a href='#' class='btn btn-lg btn-transparent'>了解更多...</a>
+                </div>
+          
+              </li>
+
+              <!-- SLIDE 3 -->
+              <li data-transition="zoomout"
+                data-slotamount="1"
+                data-masterspeed="1000"
+                data-delay="8000"
+                data-title="Great Ideas">
+
+                <!-- MAIN IMAGE -->
+                <img src="{%static 'hpage/img/revolution/slide_3.jpg'%}"
+                  alt=""
+                  data-bgrepeat="no-repeat"
+                  data-bgfit="cover"
+                  data-bgparallax="7"
+                  class="rev-slidebg"
+                  >
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption hero-text"
+                  data-x="center"
+                  data-y="center"
+                  data-voffset="['-100', '-90', '-80', '-100']"
+                  data-fontsize="['100', '90', '80', '40']"
+                  data-lineheight="['70', '65', '50', '40']"
+                  data-fontweight="700"
+                  data-whitespace="[nowrap, nowrap, nowrap, nowrap]"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                  data-start="1000"
+                  data-elementdelay="0.01"
+                  style="text-align: center;">一悉健康 Layer NR 1
+                </div>
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption hero-text"
+                  data-x="center"
+                  data-y="center"
+                  data-voffset="['10','10','10','-45']"
+                  data-fontsize="['100', '90', '80', '40']"
+                  data-lineheight="['70', '65', '50', '40']"
+                  data-fontweight="700"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                  data-start="1200"
+                  data-elementdelay="0.01"
+                  style="text-align: center;">一悉健康 Layer NR 2
+                </div>
+
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption medium-text"
+                  data-x="center"
+                  data-y="center"
+                  data-voffset="[110,116,100,20]"
+                  data-fontsize="['22', '22', '22', '20']"
+                  data-whitespace="[nowrap,nowrap,nowrap,normal]"
+                  data-width="[auto,auto,auto,300]"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                  data-start="1300"
+                  data-elementdelay="0.01"
+                  style="text-align: center;">Super responsive and retina ready
+                </div>
+
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption tp-resizeme"
+                  data-x="center"
+                  data-y="center"
+                  data-voffset="[200, 200, 170, 100]"
+                  data-hoffset="0"
+                  data-transform_idle="o:1;s:500"
+                  data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                  data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;"
+                  data-start="1400"
+                  data-elementdelay="0.01"
+                  data-linktoslide="next"
+                  style="z-index: 4; letter-spacing: 2px;"><a href='#' class='btn btn-lg btn-transparent'>了解更多...</a>
+                </div>
+              
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Icon Boxes -->
+      <section class="section-wrap icon-boxes bg-light pb-40 pb-sml-80">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-md-4 col-sm-6 mb-50">
+              <div class="service-item-box style-1 red text-center">
+                <i class="icon-diamond"></i>
+                <h3>悉心检查</h3>
+                <p class="mb-20">这里是一些小字说明，暂且随便写写凑凑字数吧</p>
+                <a href="#" class="read-more sliding-link">Read More</a>   
+              </div>            
+            </div> <!-- end service item -->
+
+            <div class="col-md-4 col-sm-6 mb-50">
+              <div class="service-item-box style-1 turquoise text-center">
+                <i class="icon-layers"></i>
+                <h3>精确配比</h3>
+                <p class="mb-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>  
+                <a href="#" class="read-more sliding-link">Read More</a>  
+              </div>            
+            </div> <!-- end service item -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="service-item-box style-1 violet text-center">
+                <i class="icon-handbag"></i>
+                <h3>一站式购买</h3>
+                <p class="mb-20">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+                <a href="#" class="read-more sliding-link">Read More</a>   
+              </div>            
+            </div> <!-- end service item -->
+          </div>
+        </div>
+      </section> <!-- end icon boxes -->
+
+
+      <!-- Promo Section -->
+      <section class="temp-hidden-element section-wrap promo-section pt-150 pb-130 pt-mdm-80 pb-mdm-80 relative">
+        <div id="owl-promo" class="owl-carousel owl-theme">
+
+          <div class="item">
+            <div class="container-fluid">
+              <div class="row"> 
+                <div class="col-md-7 col-sm-12">
+                  <img src="{%static 'hpage/img/promo_laptop_1.jpg'%}" alt="" class="promo-img wow slideInLeft" data-wow-duration="1.2s" data-wow-delay="0s">
+                </div>    
+                <div class="col-md-5 col-sm-12">
+                  <div class="customNavigation">
+                    <a class="btn prev"><i class="ti-angle-left"></i></a>
+                    <a class="btn next"><i class="ti-angle-right"></i></a>
+                  </div>
+                  <h2 class="mt-20">Perfection in Details</h2>
+                  <p class="lead-text">
+                  We possess within us two minds. So far I have written only of the conscious mind.                 
+                  </p>
+                  <p>Syros is a simple and elegant template with tons of features. Lorem ipsum dolor sit amet, consectetur. It is retina ready, easy to cuztomize and has amazing support. Get this perfect theme right now.</p>
+                  <a href="#" class="btn btn-md btn-stroke btn-icon mt-40 mt-mdm-20"><span>Watch Demo</span><i class="fa fa-angle-right"></i></a>
+                  <a href="#" class="btn btn-md btn-color btn-icon mt-40 mt-mdm-20"><span>Purchase Now</span><i class="fa fa-angle-right"></i></a>
+                </div>                      
+              </div>        
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="container-fluid">
+              <div class="row"> 
+                <div class="col-md-7 col-sm-12">
+                  <img src="img/promo_laptop_2.jpg" alt="" class="promo-img">
+                </div>    
+                <div class="col-md-5 col-sm-12">
+                  <div class="customNavigation">
+                    <a class="btn prev"><i class="ti-angle-left"></i></a>
+                    <a class="btn next"><i class="ti-angle-right"></i></a>
+                  </div>
+                  <h2 class="mt-20">Easy to Customize</h2>
+                  <p class="lead-text">
+                  We possess within us two minds. So far I have written only of the conscious mind.                 
+                  </p>
+                  <p>Syros is a simple and elegant template with tons of features. Lorem ipsum dolor sit amet, consectetur. It is retina ready, easy to cuztomize and has amazing support. Get this perfect theme right now.</p>
+                  <a href="#" class="btn btn-md btn-stroke btn-icon mt-40 mt-mdm-20"><span>Watch Demo</span><i class="fa fa-angle-right"></i></a>
+                  <a href="#" class="btn btn-md btn-color btn-icon mt-40 mt-mdm-20"><span>Purchase Now</span><i class="fa fa-angle-right"></i></a>
+                </div>                      
+              </div>        
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="container-fluid">
+              <div class="row"> 
+                <div class="col-md-7 col-sm-12">
+                  <img src="img/promo_laptop_3.jpg" alt="" class="promo-img">
+                </div>    
+                <div class="col-md-5 col-sm-12">
+                  <div class="customNavigation">
+                    <a class="btn prev"><i class="ti-angle-left"></i></a>
+                    <a class="btn next"><i class="ti-angle-right"></i></a>
+                  </div>
+                  <h2 class="mt-20">Fully Responsive</h2>
+                  <p class="lead-text">
+                  We possess within us two minds. So far I have written only of the conscious mind.                 
+                  </p>
+                  <p>Syros is a simple and elegant template with tons of features. Lorem ipsum dolor sit amet, consectetur. It is retina ready, easy to cuztomize and has amazing support. Get this perfect theme right now.</p>
+                  <a href="#" class="btn btn-md btn-stroke btn-icon mt-40 mt-mdm-20"><span>Watch Demo</span><i class="fa fa-angle-right"></i></a>
+                  <a href="#" class="btn btn-md btn-color btn-icon mt-40 mt-mdm-20"><span>Purchase Now</span><i class="fa fa-angle-right"></i></a>
+                </div>                      
+              </div>        
+            </div>
+          </div>
+
+        </div>  
+      </section> <!-- end promo section -->
+
+      <!-- Testimonials -->
+      <section class="temp-hidden-element section-wrap parallax-testimonials nopadding relative">
+
+        <div class="relative">
+          <div id="owl-testimonials" class="owl-carousel owl-theme light-arrows text-center">
+
+            <div class="item">
+              <div class="container testimonial">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="testimonial-text">I’am amazed, I should say thank you so much for your awesome template. Design is so good and neat, every detail has been taken care these team are realy amazing and talented! I will work only with this agency.</p>
+                    <span>— Sara Simpson, CEO of Company</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="container testimonial">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="testimonial-text">I’am amazed, I should say thank you so much for your awesome template. Design is so good and neat, every detail has been taken care these team are realy amazing and talented! I will work only with enigma agency.</p>
+                    <span>— John C. Marshall, Art Director</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="container testimonial">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="testimonial-text">I’am amazed, I should say thank you so much for your awesome template. Design is so good and neat, every detail has been taken care these team are realy amazing and talented! I will work only with enigma agency.</p>
+                    <span>— Clint Eastwood, Actor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="parallax" data-stellar-background-ratio="0.5"></div>
+      </section> <!-- end testimonials -->
+
+      <!-- Partners -->
+      <section class="temp-hidden-element section-wrap partners bg-dark">
+        <div class="container">
+          <div class="row">
+
+            <div id="owl-partners" class="owl-carousel owl-theme">
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/partner_logo_dark_1.png" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="img/partner_logo_dark_2.png" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="img/partner_logo_dark_3.png" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="img/partner_logo_dark_4.png" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="img/partner_logo_dark_5.png" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="img/partner_logo_dark_6.png" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="img/partner_logo_dark_1.png" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="img/partner_logo_dark_2.png" alt="">
+                </a>
+              </div>
+
+            </div> <!-- end carousel -->
+            
+          </div>
+        </div>
+      </section> <!-- end partners -->
+
+      <!-- Portfolio 3 Columns-->
+      <section class="section-wrap bg-light">
+        <div class="container-fluid">
+
+          <div class="row heading-row">
+            <div class="col-md-12 text-center">
+              <h2 class="heading uppercase bottom-line">Best Works</h2>
+            </div>
+          </div>
+
+          <!-- filter -->
+          <div class="row"> 
+            <div class="col-md-12">
+              <div class="portfolio-filter">
+                <a href="#" class="filter active sliding-link" data-filter="*">All</a>
+                <a href="#" class="filter sliding-link" data-filter=".web-design">Web Design</a>
+                <a href="#" class="filter sliding-link" data-filter=".branding">Branding</a>
+                <a href="#" class="filter sliding-link" data-filter=".photography">Photography</a>
+              </div>
+            </div>
+          </div> <!-- end filter -->
+
+          <div class="row">
+            <div id="portfolio-container" class="works-grid grid-4-col no-gutter">
+
+              <div class="work-item web-design photography">
+                <div class="work-container">
+                  <div class="work-img rounded">
+                    <img src="{%static 'hpage/img/portfolio/1.jpg'%}" alt="">
+                    <div class="work-overlay">
+                      <div class="project-icons">
+                        <a href="{%static 'hpage/img/portfolio/1_big.jpg'%}" class="lightbox-gallery" title="Awesome Boat"><i class="fa fa-search"></i></a>
+                        <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="work-description">
+                      <h2><a href="#">Awesome Boat</a></h2>
+                      <span><a href="#">Photography</a></span>
+                    </div>
+                  </div>
+                </div> 
+              </div> <!-- end work-item -->
+
+              <div class="work-item photography branding">
+                <div class="work-container">
+                  <div class="work-img rounded">
+                    <img src="{%static 'hpage/img/portfolio/masonry/3_long.jpg'%}" alt="">
+                    <div class="work-overlay">
+                      <div class="project-icons">
+                        <a href="" class="lightbox-video mfp-iframe"><i class="fa fa-play"></i></a>
+                        <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="work-description">
+                      <h2><a href="#">Vimeo Video</a></h2>
+                      <span><a href="#">Web Design</a></span>
+                    </div>
+                  </div>
+                </div> 
+              </div> <!-- end work-item -->
+
+              <div class="work-item web-design photography">
+                <div class="work-container">
+                  <div class="work-img rounded">
+                    <img src="{%static 'hpage/img/portfolio/3.jpg'%}" alt="">
+                    <div class="work-overlay">
+                      <div class="project-icons">
+                        <a href="" class="lightbox-video mfp-iframe"><i class="fa fa-play"></i></a>
+                        <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="work-description">
+                      <h2><a href="#">Youtube Video</a></h2>
+                      <span><a href="#">Photography</a></span>
+                    </div>
+                  </div>
+                </div> 
+              </div> <!-- end work-item -->
+
+              <div class="work-item web-design branding">
+                <div class="work-container">
+                  <div class="work-img rounded">
+                    <img src="{%static 'hpage/img/portfolio/masonry/8_long.jpg'%}" alt="">
+                    <div class="work-overlay">
+                      <div class="project-icons">
+                        <a href="{%static 'hpage/img/portfolio/masonry/8_big.jpg'%}" class="lightbox-gallery" title="Super Minimal"><i class="fa fa-search"></i></a>
+                        <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="work-description">
+                      <h2><a href="#">Super Minimal</a></h2>
+                      <span><a href="#">Branding</a></span>
+                    </div>
+                  </div>
+                </div> 
+              </div> <!-- end work-item -->
+
+              <div class="work-item branding photography">
+                <div class="work-container">
+                  <div class="work-img rounded">
+                    <img src="{%static 'hpage/img/portfolio/5.jpg'%}" alt="">
+                    <div class="work-overlay">
+                      <div class="project-icons">
+                        <a href="{%static 'hpage/img/portfolio/5_big.jpg'%}" class="lightbox-gallery" title="Design Studio"><i class="fa fa-search"></i></a>
+                        <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="work-description">
+                      <h2><a href="#">Design Studio</a></h2>
+                      <span><a href="#">Branding</a></span>
+                    </div>
+                  </div>
+                </div> 
+              </div> <!-- end work-item -->
+
+              <div class="work-item web-design branding">
+                <div class="work-container">
+                  <div class="work-img rounded">
+                    <img src="{%static 'hpage/img/portfolio/6.jpg'%}" alt="">
+                    <div class="work-overlay">
+                      <div class="project-icons">
+                        <a href="{%static 'hpage/img/portfolio/6_big.jpg'%}" class="lightbox-gallery" title="Morning in Quebec"><i class="fa fa-search"></i></a>
+                        <a href="#" class="project-icon"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <div class="work-description">
+                      <h2><a href="#">Morning in Quebec</a></h2>
+                      <span><a href="#">Photography</a></span>
+                    </div>
+                  </div>
+                </div> 
+              </div> <!-- end work-item -->
+
+            </div>  <!-- end portfolio container -->
+          </div> <!-- end row -->
+          
+          <div class="row mt-40">
+            <div class="col-md-12 text-center">
+                <a href="#" class="btn btn-lg btn-icon btn-white" id="load-more"><span>More Works</span><i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section> <!-- end portfolio-->
+
+      <!-- Icon Boxes -->
+      <section class="temp-hidden-element section-wrap icon-boxes bg-gradient relative" id="features">
+        <div class="container">
+
+          <div class="row heading-row style-2">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <h2 class="heading white large">What is Core Features?</h2>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4 mb-70">
+              <div class="service-item-box style-5">
+
+                <div class="svg-icon">
+                  <svg version="1.1" id="svg-icon-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                  <polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="18,26.066 2,33 32,45 62,33 46,26.067 ">
+                  <polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="18,39.066 2,46 32,58 62,46 46,39.067 ">
+                  <polygon fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="32,32 62,20 32,7 2,20 ">
+                  </svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="white">Page Builder</h3>
+                  <p class="white">Syros Theme is the Best Multi-purpose theme</p>
+                </div>
+              </div>            
+            </div> <!-- end service item -->
+
+            <div class="col-sm-4 mb-70">
+              <div class="service-item-box style-5">
+
+                <div class="svg-icon">
+                  <svg version="1.1" id="svg-icon-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="36" y1="34" x2="41" y2="39">
+                  <rect x="46.257" y="35.065" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 120.5036 47.0858)" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="8.485" height="26.87">
+                  <polygon fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="12,16 18,10 8,4 6,6 ">
+                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="28" y1="26" x2="15" y2="13">
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M58,12.5l-8,3.75l-4-4.125l3.5-8.062l0,0
+                    C39.5,4.062,37,9,37,14v4L3.5,52l-1.75,6l2.125,2l6.062-1.5L44,25h4C53,25,58,22.5,58,12.5L58,12.5z">
+                  </svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="white">Easy Customization</h3>
+                  <p class="white">Syros Theme is the Best Multi-purpose theme</p>
+                </div>
+              </div>            
+            </div> <!-- end service item -->
+
+            <div class="col-sm-4 mb-70">
+              <div class="service-item-box style-5">
+
+                <div class="svg-icon">
+                  <svg version="1.1" id="svg-icon-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                  <rect x="23" y="57" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="18" height="6">
+                  <rect x="19" y="47" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="26" height="10">
+                  <polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="41,47 41,43 48,30 32,1 16,30 23,43 23,47 
+                    ">
+                  <circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="32" cy="28.875" r="4">
+                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="32" y1="1" x2="32" y2="25">
+                  </svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="white">Super Trendy Design</h3>
+                  <p class="white">Syros Theme is the Best Multi-purpose theme</p>
+                </div>
+              </div>            
+            </div> <!-- end service item -->
+         
+          </div> <!-- end row -->
+
+          <div class="row">
+
+            <div class="col-sm-4 mb-70">
+              <div class="service-item-box style-5">
+
+                <div class="svg-icon">
+                  <svg version="1.1" id="svg-icon-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M32.001,0.887c17.184,0,31.113,13.929,31.112,31.113
+                    C63.114,49.185,49.184,63.115,32,63.113C14.815,63.114,0.887,49.185,0.888,32.001C0.885,14.816,14.815,0.887,32.001,0.887z">
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M10,32c0-5.63,2.148-11.26,6.444-15.556
+                    c8.591-8.593,22.521-8.593,31.112,0C51.852,20.74,54,26.37,54,32">
+                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="24" y1="26" x2="30.333" y2="33.333">
+                  <circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="32" cy="35" r="2">
+                  </svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="white">Fast Loading</h3>
+                  <p class="white">Syros Theme is the Best Multi-purpose theme</p>
+                </div>
+              </div>            
+            </div> <!-- end service item -->
+
+            <div class="col-sm-4 mb-70">
+              <div class="service-item-box style-5">
+
+                <div class="svg-icon">
+                  <svg version="1.1" id="svg-icon-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                  <g>
+                    <rect x="11" y="1" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="42" height="62">
+                  </g>
+                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="28" y1="5" x2="36" y2="5">
+                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="11" y1="51" x2="53" y2="51">
+                  <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="11" y1="9" x2="53" y2="9">
+                  <circle fill="none" stroke="#000000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" cx="32" cy="57" r="2">
+                  </svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="white">Fully Responsive</h3>
+                  <p class="white">Syros Theme is the Best Multi-purpose theme</p>
+                </div>
+              </div>            
+            </div> <!-- end service item -->
+
+            <div class="col-sm-4 mb-70">
+              <div class="service-item-box style-5">
+
+                <div class="svg-icon">
+                  <svg version="1.1" id="svg-icon-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M11,48C5.477,48,1,43.523,1,38s4.477-10,10-10h2v20
+                    H11z">
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M53,28c5.523,0,10,4.477,10,10s-4.477,10-10,10h-2
+                    V28H53z">
+                  <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M13,31v-9c0,0,0-16,19-16s19,16,19,16v6">
+                  <polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="51,48 51,53 36,59 28,59 28,55 36,55 
+                    36,58 ">
+                  </svg>
+                </div>
+                <div class="service-text">
+                  <h3 class="white">Customers Support</h3>
+                  <p class="white">Syros Theme is the Best Multi-purpose theme</p>
+                </div>
+              </div>            
+            </div> <!-- end service item -->
+          
+          </div> <!-- end row -->
+        </div>
+      </section> <!-- end icon boxes -->
+
+
+      <!-- Skills -->
+      <section class="section-wrap skills pb-40">
+
+        <div class="container">
+          <div class="row">
+
+            <!-- Progress bars solid -->  
+            <div class="col-md-6 mb-50">
+              <div class="heading">
+                <h4 class="uppercase bottom-line left-align">Our Capabilities</h4>
+              </div>
+
+              <div class="progress-bars skills-progress">
+
+                <h6>Web Design <span>88%</span></h6>
+                <div class="progress meter">
+                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="88" class="progress-bar" role="progressbar">
+                    <span class="sr-only">88% Complete</span>
+                  </div>
+                </div>
+
+                <h6>Marketing <span>92%</span></h6>
+                <div class="progress meter">
+                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="92" class="progress-bar" role="progressbar">
+                    <span class="sr-only">92% Complete</span>
+                  </div>
+                </div>
+
+                <h6>WordPress <span>94%</span></h6>
+                <div class="progress meter">
+                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="94" class="progress-bar" role="progressbar">
+                    <span class="sr-only">94% Complete</span>
+                  </div>
+                </div>
+
+                <h6>Photography <span>78%</span></h6>
+                <div class="progress meter">
+                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="78" class="progress-bar" role="progressbar">
+                    <span class="sr-only">78% Complete</span>
+                  </div>
+                </div>
+
+                <h6>Creativity <span>100%</span></h6>
+                <div class="progress meter" id="animated-skills">
+                  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar" role="progressbar">
+                    <span class="sr-only">100% Complete</span>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- end progress bars -->
+
+            <div class="col-md-6">
+              <div class="heading">
+                <h4 class="uppercase bottom-line left-align">What We Do</h4>
+              </div>
+
+              <!-- Accordions -->
+              <div class="panel-group accordion mb-50" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="minus">Super Flexible<span>&nbsp;</span>
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      We possess within us two minds. So far I have written only of the conscious mind. I would now like to introduce you. We possess within us two minds. So far I have written only of the conscious mind.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="plus">Awesome Theme<span>&nbsp;</span>
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                       Our subconscious mind contains such power and complexity that it literally staggers the imagination.And finally the subconscious is the mechanism through which thought impulses.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="plus">Retina Ready<span>&nbsp;</span>
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      And finally the subconscious is the mechanism through which thought impulses which are repeated regularly with feeling and emotion are quickened, charged. Our subconscious mind contains such power and complexity that it literally staggers the imagination.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- end accordions -->
+
+          </div>
+        </div>
+      </section> <!-- end skills -->
+
+      <!-- CTA Style-3 -->
+      <a href="#" class="call-to-action style-3 bg-color text-center">
+        <div class="container">
+          <h2 class="mb-0 white underline-link">What are you waiting for? Syros is the Best Theme</h2>
+        </div>
+      </a> <!-- end CTA Style-3 -->
+
+      <!-- Footer Type-1 -->
+      <footer class="footer footer-type-1 bg-dark">
+        <div class="container-fluid semi-fluid">
+          <div class="footer-widgets">
+            <div class="row">
+
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="widget footer-about-us">
+                  <h5 class="bottom-line left-align">关于我们</h5>
+                  <p class="mb-0">Syros is a unique and modern Wordpress theme with super stunning design. Flexible page builder and theme options give you the abilty to build any website.</p>
+                  <div class="social-icons dark rounded mt-20">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-vimeo"></i></a>
+                  </div>
+                </div>
+              </div> <!-- end about us -->
+
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="widget footer-get-in-touch">
+                  <h5 class="bottom-line left-align">联系我们</h5>
+                  <address class="footer-address">Philippines, Afela inc.<br> Talay st. 65, PO Box 6200 </address>
+                  <p><i class="fa fa-phone"></i> + 1 888 1554 456 123</p>
+                  <p><i class="fa fa-envelope"></i> <a href="mailto:afelasupport@gmail.com" class="sliding-link">themesupport@gmail.com</a></p>
+                  <p><i class="fa fa-fax"></i> +63 918 4084 694</p>
+                </div>
+              </div> <!-- end stay in touch -->
+
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="widget recent-posts">
+                  <h5 class="bottom-line left-align">Latest Posts</h5>
+                  <div class="entry-list">
+                    <ul>
+                      <li class="entry-li">
+                        <article class="post-small clearfix">
+                          <div class="entry">
+                            <h3 class="entry-title"><a href="#">6 Ways to Be More Productive</a></h3>
+                            <ul class="entry-meta">
+                              <li class="entry-date">
+                                <a href="#">19 Mar, 2017</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="entry-li">
+                        <article class="post-small clearfix">
+                          <div class="entry">
+                            <h3 class="entry-title"><a href="#">3 Tips to Align Your Startup</a></h3>
+                            <ul class="entry-meta">
+                              <li class="entry-date">
+                                <a href="#">16 Mar, 2017</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="entry-li">
+                        <article class="post-small clearfix">
+                          <div class="entry">
+                            <h3 class="entry-title"><a href="#">3 Tips to Align Your Startup</a></h3>
+                            <ul class="entry-meta">
+                              <li class="entry-date">
+                                <a href="#">12 Mar, 2017</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </article>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div> <!-- end latest posts -->
+
+              <div class="col-md-3 col-sm-6 col-xs-12 last">
+                <h5 class="bottom-line left-align">Recent Works</h5>
+                <ul class="recent-works clearfix">
+                  <li>
+                    <a href="#">
+                      <img src="{%static 'hpage/img/recent_works_1.jpg'%}" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="{%static 'hpage/img/recent_works_2.jpg'%}" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="{%static 'hpage/img/recent_works_3.jpg'%}" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="{%static 'hpage/img/recent_works_4.jpg'%}" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="{%static 'hpage/img/recent_works_5.jpg'%}" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="{%static 'hpage/img/recent_works_6.jpg'%}" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="{%static 'hpage/img/recent_works_7.jpg'%}" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="{%static 'hpage/img/recent_works_8.jpg'%}" alt="">
+                    </a>
+                  </li>
+                </ul>                
+              </div> <!-- end recent works -->
+
+            </div>
+          </div>    
+        </div> <!-- end container -->
+
+        <div class="bottom-footer">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-sm-12 copyright text-center">
+                <span>
+                  Copyright &copy; 2019.一悉健康 All rights reserved.<a target="_blank" href="http://www.baidu.com">京icp备：1234567-1号</a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div> <!-- end bottom footer -->
+      </footer> <!-- end footer -->
+
+
+      <div id="back-to-top">
+        <a href="#top"><i class="fa fa-angle-up"></i></a>
+      </div>
+
+    </div> <!-- end content wrapper -->
+  </div> <!-- end main wrapper -->
+
+  <!-- jQuery Scripts -->
+  <script type="text/javascript" src="{%static 'hpage/js/jquery.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/js/bootstrap.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/js/aflesler.1.4.0.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/js/plugins.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/revolution/js/jquery.themepunch.tools.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/revolution/js/jquery.themepunch.revolution.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/js/rev-slider.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/js/scripts.js'%}"></script>
+
+  <!-- Animated Icons -->
+  <script type="text/javascript">
+    new Vivus('svg-icon-1', {duration: 200});
+    new Vivus('svg-icon-2', {duration: 200});
+    new Vivus('svg-icon-3', {duration: 200});
+    new Vivus('svg-icon-4', {duration: 200});
+    new Vivus('svg-icon-5', {duration: 200});
+    new Vivus('svg-icon-6', {duration: 200});
+  </script>
+
+  <script type="text/javascript" src="{%static 'hpage/revolution/js/extensions/revolution.extension.video.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/revolution/js/extensions/revolution.extension.carousel.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/revolution/js/extensions/revolution.extension.slideanims.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/revolution/js/extensions/revolution.extension.actions.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/revolution/js/extensions/revolution.extension.layeranimation.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/revolution/js/extensions/revolution.extension.kenburn.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/revolution/js/extensions/revolution.extension.navigation.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/revolution/js/extensions/revolution.extension.migration.min.js'%}"></script>
+  <script type="text/javascript" src="{%static 'hpage/revolution/js/extensions/revolution.extension.parallax.min.js'%}"></script>
+    
+</body>
+</html>
