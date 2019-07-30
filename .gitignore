@@ -1,2 +1,4 @@
 #setting file for uwsgi
 uwsgi.ini
+
+ts.txt
