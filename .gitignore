@@ -8,3 +8,5 @@ uswgi.pid
 
 #the dir of pycache
 __pycache__
+
+.vscode
