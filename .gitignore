@@ -1,4 +1,8 @@
 #setting file for uwsgi
 uwsgi.ini
+uswgi.pid
 
-ts.txt
+*.pyc
+
+*.log
+
