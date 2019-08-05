@@ -6,3 +6,5 @@ uswgi.pid
 
 *.log
 
+#the dir of pycache
+__pycache__
