@@ -1375,6 +1375,10 @@ input.main-search-input:-ms-input-placeholder {
   display: none;
 }
 
+.temp-hidden-div{
+  visibility: hidden;
+}
+
 .nav-search.open .search-trigger {
   opacity: 0;
   z-index: 20;
