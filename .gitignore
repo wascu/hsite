@@ -1,5 +1,4 @@
 #setting file for uwsgi
-uwsgi.ini
 uwsgi.pid
 
 *.pyc
