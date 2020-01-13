@@ -10,3 +10,4 @@ uwsgi.pid
 __pycache__
 
 .vscode
+.idea
